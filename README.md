@@ -2,6 +2,10 @@
 Pubsub client for python, since ipfshttpclient pubsub isn't compatibe with the newer versions of ipfs
 
 
+# Install
+
+    pip3 install py-ipfs-pubsub
+
 # Example
 
 	import pubsub

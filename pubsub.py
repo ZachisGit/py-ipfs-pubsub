@@ -5,6 +5,7 @@ import io
 import threading
 import time
 import itertools
+
 _SUBS = {}
 
 def parse_endpoint(endpoint):
