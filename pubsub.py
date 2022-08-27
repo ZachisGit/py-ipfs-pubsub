@@ -35,8 +35,8 @@ def unsub(topic):
     if topic in _SUBS.keys():
         for i in range(len(_SUBS[topic][0])-1,-1,-1):
             if not _SUBS[topic][0][i] is None:
-                _SUBS[topic][i][0].close()
-                _SUBS[topic][i][0] = None
+                _SUBS[topic][0][i].close()
+                _SUBS[topic][0][i] = None
         _SUBS[topic][1] = False
 
 def sub(endpoint,topic,callback):
@@ -75,5 +75,4 @@ def _sub(endpoint,topic,callback):
                     callback(data=j["data"],seqno=j["seqno"],topic_ids=j["topicIDs"],cid=j["from"])
             except:
                 if not topic in _SUBS.keys() or _SUBS[topic][1] == False:
-                    print ("Unsub:",topic)
                     return
