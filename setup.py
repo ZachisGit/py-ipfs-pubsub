@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py-ipfs-pubsub",
-    version="0.0.1",
+    version="0.0.2",
     author="@ZachisGit",
     description="Pubsub client for python, since ipfshttpclient pubsub isn't compatibe with the newer versions of ipfs",
     long_description=long_description,
